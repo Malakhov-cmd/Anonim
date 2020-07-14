@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/favicon_new.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />-->
+    <link
+      href="favicon/favicon_new.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./style/animate.min.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <!--Активируется после загрузки дом дерева-->
+    <script src="scripts/script.js" defer></script>
+    <script src="./scripts/jquery.fancybox.min.js"></script>
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>ATP - Anonymous Trading Place</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container animated fadeInLeft delay-1s">
+        <div class="header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/Logo_Try_2.svg" alt="" />
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__container">
+              <li class="menu__link">
+                <a href="#" data-category="cloth" class="head_link">Одежда</a>
+              </li>
+              <li class="menu__link">
+                <a href="#" data-category="foot" class="head_link">Обувь</a>
+              </li>
+              <li class="menu__link">
+                <a href="#" data-category="toy" class="head_link">Игрушки</a>
+              </li>
+              <li class="menu__link">
+                <a href="#" data-category="furniture" class="head_link"
+                  >Мебель</a
+                >
+              </li>
+              <li class="menu__link">
+                <a href="#" data-category="tech" class="head_link">Техника</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn add__ad">
+            Подать объявление
+          </button>
+        </div>
+        <div class="search">
+          <!--Для передачи информации серверу-->
+          <form class="search__form">
+            <!--Для вызова через JS-->
+            <label class="search__label">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.2125 13.3516L10.1547 9.29375C10.7844 8.47969 11.125 7.48438 11.125 6.4375C11.125 5.18438 10.6359 4.00937 9.75156 3.12344C8.86719 2.2375 7.68906 1.75 6.4375 1.75C5.18594 1.75 4.00781 2.23906 3.12344 3.12344C2.2375 4.00781 1.75 5.18438 1.75 6.4375C1.75 7.68906 2.23906 8.86719 3.12344 9.75156C4.00781 10.6375 5.18438 11.125 6.4375 11.125C7.48438 11.125 8.47813 10.7844 9.29219 10.1562L13.35 14.2125C13.3619 14.2244 13.376 14.2338 13.3916 14.2403C13.4071 14.2467 13.4238 14.2501 13.4406 14.2501C13.4575 14.2501 13.4741 14.2467 13.4897 14.2403C13.5052 14.2338 13.5194 14.2244 13.5312 14.2125L14.2125 13.5328C14.2244 13.5209 14.2338 13.5068 14.2403 13.4912C14.2467 13.4757 14.2501 13.459 14.2501 13.4422C14.2501 13.4254 14.2467 13.4087 14.2403 13.3931C14.2338 13.3776 14.2244 13.3635 14.2125 13.3516ZM8.9125 8.9125C8.25 9.57344 7.37187 9.9375 6.4375 9.9375C5.50312 9.9375 4.625 9.57344 3.9625 8.9125C3.30156 8.25 2.9375 7.37187 2.9375 6.4375C2.9375 5.50312 3.30156 4.62344 3.9625 3.9625C4.625 3.30156 5.50312 2.9375 6.4375 2.9375C7.37187 2.9375 8.25156 3.3 8.9125 3.9625C9.57344 4.625 9.9375 5.50312 9.9375 6.4375C9.9375 7.37187 9.57344 8.25156 8.9125 8.9125Z"
+                  fill="#8C8C8C"
+                />
+              </svg>
+              <input class="search__input" type="search" />
+            </label>
+            <div class="back_btm">
+              <a href="index.html" class="back_to_main">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0031 4.04531L3.33121 12.7102H5.58121V20.3438H9.18824V15C9.18824 14.482 9.60778 14.0625 10.1257 14.0625H13.8757C14.3937 14.0625 14.8132 14.482 14.8132 15V20.3438H18.4203V12.7102H20.6726L12.5445 4.58672L12.0031 4.04531ZM22.1867 13.957C22.0461 14.0977 21.8797 14.2102 21.6992 14.2828C21.8797 14.2078 22.0461 14.0977 22.1867 13.957ZM1.39762 13.1438C1.51481 13.8539 2.13356 14.3977 2.87653 14.3977H2.89762C2.14996 14.3977 1.51715 13.8586 1.39762 13.1438ZM1.37653 12.8977V12.8531V12.8977ZM1.37887 12.8367C1.38121 12.7641 1.39059 12.6938 1.40231 12.6235C1.38824 12.6914 1.38121 12.7641 1.37887 12.8367Z"
+                    fill="#E6F7FF"
+                  />
+                  <path
+                    d="M22.2883 11.9531C22.2883 11.9508 22.286 11.9508 22.286 11.9484L22.2438 11.8992C22.2414 11.8969 22.2391 11.8922 22.2344 11.8898C22.218 11.8711 22.1993 11.8523 22.1828 11.8336L13.1266 2.78436L12.5196 2.17733C12.3813 2.03993 12.1942 1.96282 11.9993 1.96282C11.8043 1.96282 11.6173 2.03993 11.4789 2.17733L1.81566 11.8359C1.64109 12.0096 1.51225 12.2238 1.44066 12.4594L1.4266 12.5086L1.41957 12.5344L1.41254 12.5625C1.40785 12.5789 1.40551 12.5953 1.40316 12.6117C1.40316 12.614 1.40316 12.6187 1.40082 12.6211C1.38676 12.6914 1.37972 12.7617 1.37738 12.8344V12.9117C1.37738 12.9234 1.37738 12.9351 1.37972 12.9469C1.37972 12.9586 1.37972 12.968 1.38207 12.9797C1.38207 12.9914 1.38441 13.0031 1.38441 13.0148C1.38441 13.0289 1.38676 13.043 1.3891 13.057C1.3891 13.064 1.39144 13.0711 1.39144 13.0781L1.39847 13.1367V13.139C1.51801 13.8539 2.15316 14.393 2.89847 14.393H3.89457V22.0312H20.1063V14.3976H21.1235C21.325 14.3976 21.5196 14.3578 21.6977 14.2828C21.8758 14.2078 22.0422 14.0976 22.1852 13.957C22.3248 13.8178 22.4355 13.6523 22.5107 13.4701C22.5859 13.2878 22.6243 13.0925 22.6235 12.8953C22.6235 12.5508 22.5063 12.2203 22.2883 11.9531ZM13.3118 20.3437H10.6868V15.5625H13.3118V20.3437ZM18.4188 12.7101V20.3437H14.8118V15C14.8118 14.482 14.3922 14.0625 13.8743 14.0625H10.1243C9.60629 14.0625 9.18676 14.482 9.18676 15V20.3437H5.57972V12.7101H3.32972L12.0016 4.0453L12.543 4.58671L20.6711 12.7101H18.4188Z"
+                    fill="#1e90ff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--Гармбургер-->
+      <div class="menu-button animated fadeInUp delay-1s"></div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!--мАРКИРОВАННЫЙ СПИСОК-->
+        <ul class="catalog animated fadeInUp delay-1s"></ul>
+      </div>
+    </main>
+    <footer class="footer animated fadeInDown delay-2s">
+      <div class="container">
+        <div class="footer-content">
+          <div class="left">
+            <span class="copyright"
+              >© 2020 Anonymous Trading Place. All rights were left
+              behind.</span
+            >
+          </div>
+          <div class="right">
+            <nav class="footer-menu">
+              <a
+                href="https://www.copyrightservice.net/ru/copyright/us"
+                class="footer-link"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://www.copyrightservice.net/ru/copyright/us"
+                class="footer-link"
+                >Terms of Service</a
+              >
+              <a
+                href="https://www.copyrightservice.net/ru/copyright/us"
+                class="footer-link"
+                >Legal</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal__add animated zoomIn hide">
+      <div class="modal__block">
+        <h2 class="modal__header">Подать Объявление</h2>
+        <div class="modal__content">
+          <div class="modal__image_holder">
+            <img
+              class="modal__image modal__image-add"
+              src="img/temp.jpg"
+              alt="test"
+            />
+          </div>
+          <form class="modal__submit">
+            <label class="modal__file-label">
+              <span class="btn modal__file-btn">Добавить фото</span>
+              <input
+                class="modal__file-input"
+                type="file"
+                name="image"
+                accept="image/*"
+                required
+              />
+            </label>
+
+            <label>
+              <span>Категория:</span>
+              <!--Выпадающий список-->
+              <select name="category">
+                <option value="toy">Игрушки</option>
+                <option value="furniture">Мебель</option>
+                <option value="foot">Обувь</option>
+                <option value="cloth">Одежда</option>
+                <option value="tech">Техника</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Название:</span>
+              <!--Поле ввода-->
+              <input name="nameItem" type="text" required />
+            </label>
+
+            <label>
+              <span>Состояние:</span>
+              <!--Выпадающий список-->
+              <select name="status">
+                <option value="old">Б/у</option>
+                <option value="new">Новый</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Описание:</span>
+              <!--поле для ввода текста-->
+              <textarea
+                name="descriptionItem"
+                maxlength="3000"
+                required
+              ></textarea>
+            </label>
+
+            <label>
+              <span>Цена:</span>
+              <input name="costItem" type="number" required />
+            </label>
+            <!--Телефон-->
+            <label>
+              <span>Номер:</span>
+              <input name="numberItem" type="number" required />
+            </label>
+            <div class="modal__btn-block">
+              <span class="modal__btn-warning">Заполните все поля</span>
+              <button class="btn modal__btn-submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <button class="modal__close">&#10008;</button>
+      </div>
+    </div>
+
+    <div class="modal modal__item animated zoomIn hide">
+      <div class="modal__block">
+        <h2 class="modal__header"></h2>
+        <div class="modal__content">
+          <div>
+            <img
+              class="modal__image modal__image-item"
+              src="img/temp.jpg"
+              alt="test"
+            />
+          </div>
+          <div class="modal__description">
+            <h3 class="modal__header-item">Тестовый Телефон</h3>
+            <p>Состояние: <span class="modal__status-item">отличное</span></p>
+            <p>
+              Описание:
+              <span class="modal__description-item"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+                aut deleniti dolores ex explicabo fugit hic?</span
+              >
+            </p>
+            <p>Цена: <span class="modal__cost-item">4000 ₽</span></p>
+            <p>Номер: <span class="modal__numberItem">4000 ₽</span></p>
+            <button class="btn number_submit">Купить</button>
+          </div>
+        </div>
+        <button class="modal__close">&#10008;</button>
+      </div>
+    </div>
+    <!--Телефон-->
+    <div class="modal modal__phone__number hide">
+      <div class="phone_display">
+        <p><span class="modal__numberItem">88008080000</span></p>
+        <button class="modal__close_phone">&#10008;</button>
+      </div>
+    </div>
+  </body>
+</html>
